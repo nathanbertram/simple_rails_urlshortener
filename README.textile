@@ -1,0 +1,17 @@
+h2. About
+
+A very simple rails url shortener for your personal use using a simple ActiveRecord model.
+
+h2. Install Instructions
+
+1. Setup your db of choice
+2. bundle install
+3. rake db:migrate
+4. go go go!
+
+h2. TODO
+
+- Setup basic view and controller with haml
+- Tests ;)
+- Simple API to create and retrieve short url
+- Easy way to switch over to mongo or redis
