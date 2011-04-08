@@ -4,7 +4,7 @@ class ShortUrl < ActiveRecord::Base
   validates_presence_of :url
 
   def url=(set_url)
-    write_attribute(:url, PostRank::URI.clean(set_url))
+    write_attribute(:url, set_url.present? ? PostRank::URI.clean(set_url) : nil)
   end
 
   def encoded_key
@@ -30,8 +30,6 @@ class ShortUrl < ActiveRecord::Base
       end
     end
     
-    self.find(id_to_find)
+    self.find_by_id(id_to_find)
   end
-  
-
 end

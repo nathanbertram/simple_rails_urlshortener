@@ -1,0 +1,6 @@
+= form_for @short_url do |f|
+  %fieldset
+    %ul
+      %li
+        = f.text_field :url, :class => :text
+        = f.submit 'Shorten!', :class => :submit
