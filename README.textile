@@ -1,6 +1,6 @@
 h2. About
 
-A very simple rails url shortener for your personal use using a simple ActiveRecord model.
+A very simple rails url shortener *with* simple json API for your personal use using a simple ActiveRecord model.
 
 h2. Install Instructions
 
@@ -11,7 +11,5 @@ h2. Install Instructions
 
 h2. TODO
 
-- Setup basic view and controller with haml
-- Tests ;)
-- Simple API to create and retrieve short url
-- Easy way to switch over to mongo or redis
+- Easy way to switch over to something mongo or redis or something cool like that.
+- Don't do duplicate work if someone else has already shortened github.com ;)
